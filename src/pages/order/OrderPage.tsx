@@ -8,7 +8,10 @@ import { useOrder } from "../../context/OrderContext";
 import { getOrdersByTab } from "../../api/orderApi";
 import axios from "axios";
 
-const api = axios.create({ baseURL: "/api", withCredentials: true });
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL ?? "/api",
+  withCredentials: true,
+});
 
 interface MenuItem {
   id: number;

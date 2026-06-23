@@ -363,7 +363,6 @@ export function ReportsPage() {
                 Close
               </button>
               <button
-                onClick={() => window.print()}
                 className="flex-1 py-3 rounded-xl text-white font-semibold text-sm hover:opacity-90"
                 style={{ background: "#0C2B4E" }}
               >
